@@ -1,0 +1,44 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.container-issho{
+    margin: 0 20%;
+    white-space: pre-line;
+}
+
+.container-issho h3{
+    color: gray;
+    font-weight: 500;
+}
+
+.container-issho div > div{
+    display: inline-flex;
+    margin-top: 20px;
+    padding: 2%;
+    border-radius: 20px;
+    font-size: 2vmin;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.issho, .moi{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.moi > div{
+    background-color: rgb(84, 153, 199);
+    border: 1px solid 33, 97, 140;
+    color: white;
+}
+
+.moi > .selection{
+    cursor: pointer;
+    background-color: rgb(99, 178, 231);
+}
