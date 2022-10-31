@@ -1,18 +1,31 @@
 const Cheminement = [
     {
-        "Je suis un dirigeant d'entreprise": {
-            "J'ai intégré ou je me prépare à intégrer une nouvelle fonction" : "",
-            "Je suis en poste" : "",
-            "Mon entreprise vit une étape clé de son développement" : "",
-        },
+        "element": "Je suis un dirigeant d'entreprise",
+        "sousElement" : [
+            {
+                "element": "J'ai intégré ou je me prépare à intégrer une nouvelle fonction",
+                "sousElement" : []
+            },
+            {
+                "element": "Je suis en poste",
+                "sousElement" : []
+            },
+            {
+                "element": "Mon entreprise vit une étape clé de son développement",
+                "sousElement" : []
+            },
+        ]
     },
     {
-        "Je suis un dirigeant d'une start-up": "",
+        "element": "Je suis dirigeant d'une start-up",
+        "sousElement" : []
     },
     {
-        "Je suis un cadre dirigeant": "",
+        "element": "Je suis cadre dirigeant",
+        "sousElement" : []
     },
     {
-        "Je suis un directeur des Ressources": ""
-    }
+        "element": "Je suis Directeur des Ressources Humaines",
+        "sousElement" : []
+    },
 ]

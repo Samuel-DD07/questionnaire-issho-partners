@@ -42,3 +42,15 @@ html, body{
     cursor: pointer;
     background-color: rgb(99, 178, 231);
 }
+
+.issho::before{
+    content: "issho";
+    font-weight: 500;
+    font-size: 2vmin;
+}
+
+.moi::before{
+    content: "Moi";
+    font-weight: 500;
+    font-size: 2vmin;
+}

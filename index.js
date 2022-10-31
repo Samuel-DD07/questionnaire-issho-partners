@@ -2,7 +2,13 @@ const issho = document.querySelector('.issho')
 const moi = document.querySelector('.moi')
 
 function elementSelected(e){
-    console.log(Cheminement[e.target.id][e.target.textContent]);
+    while (moi.hasChildNodes()){
+            moi.removeChild(moi.lastChild)
+    }
+    createResponse('moi', e.target.textContent)
+    Cheminement[e.target.id].sousElement.map((element, indice) =>
+        createResponse('moi', element.element, indice, true)
+    )
 }
 
 function createResponse(content, reponse, id, interaction){
@@ -12,15 +18,18 @@ function createResponse(content, reponse, id, interaction){
     if (interaction == true) {
         responseContent.classList.add("selection")
         responseContent.id = id
-        responseContent.addEventListener('click', function(e){
-            elementSelected(e)
-        })
+        responseContent.addEventListener('click', elementSelected)
     }
     eval(content).appendChild(responseContent)
 }
 
-createResponse("issho", "Bonjour !\nNous sommes issho, une communauté de dirigeants et d’entrepreneurs qui vous aide à trouver des solutions concrètes à votre développement et à la croissance de votre entreprise.")
-createResponse("issho", "Qui êtes vous ?")
-Cheminement.map((e, i) => 
-    createResponse("moi", Object.keys(e)[0], i, true)
+function intro(){
+    createResponse("issho", "Bonjour !\nNous sommes issho, une communauté de dirigeants et d’entrepreneurs qui vous aide à trouver des solutions concrètes à votre développement et à la croissance de votre entreprise.")
+    createResponse("issho", "Qui êtes vous ?")
+}
+
+intro()
+
+Cheminement.map((element, indice) =>
+    createResponse('moi', element.element, indice, true)
 )
