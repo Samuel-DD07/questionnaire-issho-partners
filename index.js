@@ -20,8 +20,4 @@ function createResponse(content, reponse, interaction){
 
 createResponse("issho", "Bonjour !\nNous sommes issho, une communauté de dirigeants et d’entrepreneurs qui vous aide à trouver des solutions concrètes à votre développement et à la croissance de votre entreprise.")
 createResponse("issho", "Qui êtes vous ?")
-createResponse("moi", "Je suis ...")
-createResponse("moi", "Un dirigeant d'entreprise", true)
-createResponse("moi", "Un dirigeant d'une start-up", true)
-createResponse("moi", "Un cadre dirigeant", true)
-createResponse("moi", "Un directeur des Ressources", true)
+Cheminement.forEach(e => createResponse("moi", e["1"], true))

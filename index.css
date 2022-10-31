@@ -18,7 +18,7 @@ html, body{
 
 .container-issho div > div{
     display: inline-flex;
-    margin-top: 20px;
+    margin-top: 2vw;
     padding: 2%;
     border-radius: 20px;
     font-size: 2vmin;
