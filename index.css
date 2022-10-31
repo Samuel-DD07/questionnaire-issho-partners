@@ -1,3 +1,7 @@
+:root{
+    --temps: 0s
+}
+
 html, body{
     margin: 0;
     padding: 0;
@@ -17,12 +21,14 @@ html, body{
 }
 
 .container-issho div > div{
-    display: inline-flex;
+    display: none;
     margin-top: 2vw;
     padding: 2%;
     border-radius: 20px;
     font-size: 2vmin;
     font-weight: 500;
+    max-width: 25vw;
+    transition: 1s transform;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -30,6 +36,11 @@ html, body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.moi{
+    display: flex;
+    align-items: flex-end;
 }
 
 .moi > div{
@@ -41,6 +52,14 @@ html, body{
 .moi > .selection{
     cursor: pointer;
     background-color: rgb(99, 178, 231);
+    transition: 1s all;
+}
+
+.moi > .selection:hover{
+    border : 1px solid rgb(99, 178, 231);
+    background-color: aliceblue;
+    color: rgb(99, 178, 231);
+    transition: 1s all;
 }
 
 .issho::before{
@@ -53,4 +72,15 @@ html, body{
     content: "Moi";
     font-weight: 500;
     font-size: 2vmin;
+}
+
+@keyframes translate{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
