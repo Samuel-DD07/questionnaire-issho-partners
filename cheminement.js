@@ -1,14 +1,14 @@
 const Cheminement = [
     {
-        "1": "Je suis un dirigeant d'entreprise",
+        "Je suis un dirigeant d'entreprise": "test",
     },
     {
-        "1": "Je suis un dirigeant d'une start-up",
+        "Je suis un dirigeant d'une start-up": "",
     },
     {
-        "1": "Je suis un cadre dirigeant",
+        "Je suis un cadre dirigeant": "",
     },
     {
-        "1": "Je suis un directeur des Ressources",
+        "Je suis un directeur des Ressources": ""
     }
 ]

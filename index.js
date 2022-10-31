@@ -2,15 +2,16 @@ const issho = document.querySelector('.issho')
 const moi = document.querySelector('.moi')
 
 function elementSelected(e){
-    console.log(e.target.textContent);
+    console.log(e.target);
 }
 
-function createResponse(content, reponse, interaction){
+function createResponse(content, reponse, id, interaction){
     const responseContent = document.createElement('div')
     responseContent.textContent = reponse
 
     if (interaction == true) {
         responseContent.classList.add("selection")
+        responseContent.id = id
         responseContent.addEventListener('click', function(e){
             elementSelected(e)
         })
@@ -20,4 +21,6 @@ function createResponse(content, reponse, interaction){
 
 createResponse("issho", "Bonjour !\nNous sommes issho, une communauté de dirigeants et d’entrepreneurs qui vous aide à trouver des solutions concrètes à votre développement et à la croissance de votre entreprise.")
 createResponse("issho", "Qui êtes vous ?")
-Cheminement.forEach(e => createResponse("moi", e["1"], true))
+Cheminement.map((e, i) => 
+    createResponse("moi", Object.keys(e)[0], i, true)
+)
