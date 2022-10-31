@@ -2,7 +2,7 @@ const issho = document.querySelector('.issho')
 const moi = document.querySelector('.moi')
 
 function elementSelected(e){
-    console.log(e.target);
+    console.log(Cheminement[e.target.id][e.target.textContent]);
 }
 
 function createResponse(content, reponse, id, interaction){
