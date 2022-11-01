@@ -1,0 +1,304 @@
+[
+  {
+    "title": "Carte 1",
+    "topic": {
+      "title": "Cheminement Formulaire Issho",
+      "topics": [
+        {
+          "title": "1.\tJe suis dirigeant d'entreprise",
+          "topics": [
+            {
+              "title": "a.\tJ'ai intégré ou je me prépare à intégrer une nouvelle fonction ",
+              "topics": [
+                {
+                  "title": "i.\tJe prépare et je réussis ma prise de fonction",
+                  "topics": [
+                    {
+                      "title": "Je prépare mon arrivée au sein de l'équipe"
+                    },
+                    {
+                      "title": "J'identifie et je renforce mon profil de dirigeant"
+                    },
+                    {
+                      "title": "Je rythme et je réussis mes 100 premiers jours"
+                    },
+                    {
+                      "title": "J'installe mon leadership dans la durée"
+                    }
+                  ]
+                },
+                {
+                  "title": "ii.\tJ'appréhende et je mobilise ma nouvelle équipe",
+                  "topics": [
+                    {
+                      "title": "Je comprends l'empreinte de ma nouvelle équipe"
+                    },
+                    {
+                      "title": "Je définis une ambition et un objectif collectif partagé avec mon équipe"
+                    },
+                    {
+                      "title": "J'installe les outils et les comportements qui traduisent l'ambition et la culture au sein de l'entreprise"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "b.\tJe suis en poste",
+              "topics": [
+                {
+                  "title": "i.\tJe donne une nouvelle impulsion à mon poste et je me fixe un nouvel objectif"
+                },
+                {
+                  "title": "ii.\tJ'anticipe l'avenir et je fais évoluer mes pratiques de management et mon leadership"
+                },
+                {
+                  "title": "iii.\tJe (Re) mobilise mon équipe autour d'une nouvelle ambition"
+                },
+                {
+                  "title": "iv.\tJ'évalue et j'améliore la performance de mon collectif de direction"
+                },
+                {
+                  "title": "v.\tJe souhaite donner une nouvelle orientation à mon projet  "
+                },
+                {
+                  "title": "vi.\tJe construis et j'exécute mon projet professionnel et personnel"
+                },
+                {
+                  "title": "vii.\tJe développe mes compétences et mes postures pour anticiper mon futur",
+                  "topics": [
+                    {
+                      "title": "Je fais évoluer mes postures de dirigeant d'entreprise"
+                    },
+                    {
+                      "title": "Je me forme à l'Executive Business Coaching pour mieux accompagner mes pairs"
+                    },
+                    {
+                      "title": "Je me forme au métier et je développe mon activité de dirigeant de transition indépendant"
+                    },
+                    {
+                      "title": "Je développe ma posture et mon activité d'expert / de consultant indépendant"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "c.\tMon entreprise vit une étape clé de son développement",
+              "topics": [
+                {
+                  "title": "i.\tJe gère une l'hyper croissance de mon organisation"
+                },
+                {
+                  "title": "ii.\tJe donne nouvelle orientation à mon activité"
+                },
+                {
+                  "title": "iii.\tJe réussis le renouvellement de mon équipe de direction équipe de direction"
+                },
+                {
+                  "title": "iv.\tJ'anticipe et j'organise ma succession"
+                },
+                {
+                  "title": "v.\tJe fait évoluer la gouvernance de mon entreprise"
+                },
+                {
+                  "title": "vi.\tJ'identifie et je déploie les opportunités de digitalisation de mon activité"
+                },
+                {
+                  "title": "vii.\tJe mets en œuvre le travail hybride au sein de mon entreprise"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "2.\tJe suis dirigeant d'une start-up",
+          "topics": [
+            {
+              "title": "Lien Vers KeepGrowing"
+            }
+          ]
+        },
+        {
+          "title": "3.\tJe suis cadre dirigeant",
+          "topics": [
+            {
+              "title": "a.\tJ'ai intégré ou je me prépare à intégrer une nouvelle fonction ",
+              "topics": [
+                {
+                  "title": "i.\tJe prépare et je réussis ma prise de fonction",
+                  "topics": [
+                    {
+                      "title": "Je prépare mon arrivée au sein de l'équipe"
+                    },
+                    {
+                      "title": "J'identifie et je renforce mon profil de dirigeant"
+                    },
+                    {
+                      "title": "Je rythme et je réussis mes 100 premiers jours"
+                    },
+                    {
+                      "title": "J'installe mon leadership dans la durée"
+                    }
+                  ]
+                },
+                {
+                  "title": "ii.\tJ'appréhende et je mobilise ma nouvelle équipe ",
+                  "topics": [
+                    {
+                      "title": "Je comprends l'empreinte de ma nouvelle équipe"
+                    },
+                    {
+                      "title": "Je définis une ambition et un objectif collectif partagé avec mon équipe"
+                    },
+                    {
+                      "title": "J'installe les outils et les comportements qui traduisent l'ambition et la culture au sein de l'entreprise"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "b.\tJe suis en poste",
+              "topics": [
+                {
+                  "title": "i.\tJe donne une nouvelle impulsion à mon poste et je me fixe un nouvel objectif"
+                },
+                {
+                  "title": "ii.\tJ'anticipe l'avenir et je fais évoluer mes pratiques de management et mon leadership"
+                },
+                {
+                  "title": "iii.\tJe (Re) mobilise mon équipe autour d'une nouvelle ambition"
+                },
+                {
+                  "title": "iv.\tJ'évalue et j'améliore la performance de mon collectif de direction"
+                }
+              ]
+            },
+            {
+              "title": "c.\tJe suis dirigeant commercial",
+              "topics": [
+                {
+                  "title": "i.\tlien vers Keep Growing"
+                }
+              ]
+            },
+            {
+              "title": "d.\tJe suis en charge de la transformation digitale",
+              "topics": [
+                {
+                  "title": "i.\tlien vers R4D"
+                }
+              ]
+            },
+            {
+              "title": "e.\tJe donne une nouvelle orientation à mon projet  ",
+              "topics": [
+                {
+                  "title": "i.\tJe fais un bilan sur mon expérience et j'identifie les orientations que je souhaite prendre le point sur ce qui m'anime et ce que je souhaite construire"
+                },
+                {
+                  "title": "ii.\tJe construis et j'exécute mon nouveau projet professionnel et personnel"
+                },
+                {
+                  "title": "iii.\tJe développe mes compétences et postures pour anticiper mon futur",
+                  "topics": [
+                    {
+                      "title": "Je fais évoluer mes postures de dirigeant d'entreprise"
+                    },
+                    {
+                      "title": "Je me forme à l'Executive Business Coaching pour mieux accompagner mes pairs"
+                    },
+                    {
+                      "title": "Je me forme au métier et je développe mon activité de dirigeant de transition indépendant"
+                    },
+                    {
+                      "title": "Je développe ma posture et mon activité d'expert / de consultant indépendant"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "f.\tMon entreprise vit une étape clé de son développement",
+              "topics": [
+                {
+                  "title": "i.\tJe gère une l'hyper croissance de mon organisation"
+                },
+                {
+                  "title": "ii.\tJe donne nouvelle orientation à mon activité"
+                },
+                {
+                  "title": "iii.\tJe réussis le renouvellement de mon équipe de direction équipe de direction"
+                },
+                {
+                  "title": "iv.\tJ'anticipe et j'organise ma succession"
+                },
+                {
+                  "title": "v.\tJe fais évoluer la gouvernance de mon entreprise"
+                },
+                {
+                  "title": "vi.\tJ'identifie et je déploie les opportunités de digitalisation de mon activité"
+                },
+                {
+                  "title": "vii.\tJe mets en œuvre le travail hybride au sein de mon entreprise"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "4.\tJe suis Directeur des Ressources Humaines",
+          "topics": [
+            {
+              "title": "a.\tJe définis le rôle de la fonction RH dans la mutation de mon entreprise",
+              "topics": [
+                {
+                  "title": "i.\tJe réfléchis et mets en œuvre le travail hybride au sein de mon entreprise"
+                },
+                {
+                  "title": "ii.\tJe fais évoluer le modèle de leadership au sein de mon entreprise"
+                },
+                {
+                  "title": "iii.\tJe fais évoluer les pratiques et postures de mes cadres dirigeants"
+                }
+              ]
+            },
+            {
+              "title": "b.\tL'équipe de direction de mon entreprise conduit un projet de transformation",
+              "topics": [
+                {
+                  "title": "i.\tJe réfléchis et mets en œuvre le travail hybride au sein de mon entreprise"
+                },
+                {
+                  "title": "ii.\tJe fais évoluer le modèle de leadership au sein de mon entreprise"
+                },
+                {
+                  "title": "iii.\tJe fais évoluer les pratiques et postures de mes cadres dirigeants"
+                }
+              ]
+            },
+            {
+              "title": "c.\tL'équipe de direction de mon entreprise est renouvelée",
+              "topics": [
+                {
+                  "title": "i.\tJe propose à mes cadres dirigeants des prestations d'outplacement ou des coachings d'évolution"
+                },
+                {
+                  "title": "ii.\tJe redéfinis le cadre du travail et d'efficacité de l'équipe de direction"
+                },
+                {
+                  "title": "iii.\tJ'accompagne le Comité de Direction dans l'évolution de ses pratiques et dans la conduite de sa transformation"
+                },
+                {
+                  "title": "iv.\tJe déploie le programme de développement des compétences de l'équipe en place"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "structure": "org.xmind.ui.map.clockwise"
+  }
+]
