@@ -1,11 +1,11 @@
 const content = document.querySelector('.container-issho')
 
-let temps = 0
 let indiceElement = {
     moi: 0,
     issho: 0,
     data: null,
-    top: 100
+    top: 50,
+    temps: 50
 }
 
 async function getData(){
@@ -16,7 +16,6 @@ async function getData(){
 
 function createConversation(tab){
     indiceElement.data = tab[0].topic.topics
-    console.log(indiceElement.data);
     createIssho()
     createMoi()
 
@@ -42,7 +41,7 @@ function createMoi(){
 }
 
 function elementSelected(e){
-    temps = 0
+    indiceElement.temps = 50
     document.querySelector(`div.moi.n-${indiceElement.moi-1}`).outerHTML = ""
     createMoi()
     createResponse(`.moi.n-${indiceElement.moi-1}`, e.target.textContent)
@@ -60,7 +59,7 @@ function elementSelected(e){
         createResponse(`.moi.n-${indiceElement.moi-1}`, element.title, e.target.id+indice, true)
         )
     } catch(e){
-        console.log("Fin !");
+        createResponse(`.moi.n-${indiceElement.moi-1}`, "Call To Action")
     }
 }
 
@@ -77,13 +76,13 @@ function createResponse(content, reponse, id, interaction){
         responseContent.style.display= "inline-flex"
         responseContent.style.animation = "translate 1s"
         document.querySelector(content).appendChild(responseContent)
-        indiceElement.top += 100
+        indiceElement.top += 50
         window.scroll({
             top: indiceElement.top,
             behavior: 'smooth'
         })
-    }, temps)
-    temps = temps + 500
+    }, indiceElement.temps)
+    indiceElement.temps = indiceElement.temps + 500
 }
 
 function searchInObj(obj, name, val, currentPath){
