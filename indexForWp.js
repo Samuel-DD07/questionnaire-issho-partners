@@ -6,6 +6,14 @@ let indiceElement = {
     top: window.scrollY,
     temps: 50
 }
+window.addEventListener('scroll', activation)
+
+function activation(){
+    if (content.getBoundingClientRect().top < 1000) {
+        getData()
+        window.removeEventListener('scroll', activation)
+    }
+}
 
 async function getData(){
     await fetch('https://samuel-dd07.github.io/questionnaire-issho-partners/Cheminement-Formulaire-Issho.json')
@@ -23,8 +31,6 @@ function createConversation(tab){
     createResponse(`.issho.n-${0}`, "Qui êtes vous ?")
     indiceElement.data.map((e, i) => createResponse(`.moi.n-${0}`, e.title, i, true))
 }
-
-getData()
 
 function createIssho(){
     const issho = document.createElement('div')
@@ -76,7 +82,7 @@ function createResponse(content, reponse, id, interaction){
         responseContent.style.display= "inline-flex"
         responseContent.style.animation = "translate 1s ease"
         document.querySelector(content).appendChild(responseContent)
-        indiceElement.top += responseContent.offsetHeight
+        indiceElement.top = window.scrollY + responseContent.offsetHeight
         window.scroll({
             top: indiceElement.top,
             behavior: 'smooth'
