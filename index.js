@@ -4,7 +4,8 @@ let temps = 0
 let indiceElement = {
     moi: 0,
     issho: 0,
-    data: null
+    data: null,
+    top: 100
 }
 
 async function getData(){
@@ -54,9 +55,13 @@ function elementSelected(e){
     const test = searchInObj(indiceElement.data, "title", e.target.textContent).replace("title", "topics")
     indiceElement.data = eval("indiceElement.data"+test)
 
-    indiceElement.data.map((element, indice) =>
+    try{
+        indiceElement.data.map((element, indice) =>
         createResponse(`.moi.n-${indiceElement.moi-1}`, element.title, e.target.id+indice, true)
-    )
+        )
+    } catch(e){
+        console.log("Fin !");
+    }
 }
 
 function createResponse(content, reponse, id, interaction){
@@ -72,6 +77,11 @@ function createResponse(content, reponse, id, interaction){
         responseContent.style.display= "inline-flex"
         responseContent.style.animation = "translate 1s"
         document.querySelector(content).appendChild(responseContent)
+        indiceElement.top += 100
+        window.scroll({
+            top: indiceElement.top,
+            behavior: 'smooth'
+        })
     }, temps)
     temps = temps + 500
 }

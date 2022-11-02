@@ -1,7 +1,3 @@
-:root{
-    --temps: 0s
-}
-
 html, body{
     margin: 0;
     padding: 0;
@@ -11,9 +7,8 @@ html, body{
 }
 
 .container-issho{
-    position: sticky;
     bottom: 0;
-    margin: 0 20% 10%;
+    margin: 2% 20% 10%;
     white-space: pre-line;
 }
 
