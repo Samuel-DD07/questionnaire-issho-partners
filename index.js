@@ -4,7 +4,7 @@ let indiceElement = {
     issho: 0,
     data: null,
     top: window.scrollY,
-    clc: ["Discuter avec un expert", "Etre rappelé par un expert", "Prendre rendez-vous"],
+    clc: ["Discuter avec un expert µ https://issho-partners.com/contact/"],
     temps: 50
 }
 
@@ -84,8 +84,8 @@ function createResponse(content, reponse, id, interaction){
 
     if (typeof reponse == "string" && reponse.indexOf('https') > -1){
         responseContent = document.createElement('a')
-        responseContent.textContent = reponse.split('-')[0]
-        responseContent.href = reponse.split('-')[1]
+        responseContent.textContent = reponse.split('µ')[0]
+        responseContent.href = reponse.split('µ')[1]
         interaction = false
     } else {
         responseContent = document.createElement('div')
