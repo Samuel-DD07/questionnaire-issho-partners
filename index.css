@@ -11,7 +11,7 @@ a{
 
 @font-face {
     font-family: 'GlacialIndifference';
-    src: url('GlacialIndifference-Regular.otf') format('truetype');
+    src: url('https://samuel-dd07.github.io/questionnaire-issho-partners/GlacialIndifference-Regular.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -28,12 +28,16 @@ a{
 }
 
 .button-start > button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #0d244f;
     color: white;
     border-radius: 20px;
     padding: 1.5vw;
     font-size: 1.5vmin;
     width: 250px;
+    height: 50px;
     font-weight: 500;
     border: none;
     cursor: pointer;
@@ -58,19 +62,21 @@ a{
 
 .container-issho>h1 {
     text-align: center;
-    font-size: 3vmin;
+    font-size: 2.5vmin;
     padding: 5%;
+    font-weight: 700;
 }
 
 .container-issho>h3 {
     color: rgb(111, 111, 111);
     font-weight: 500;
+    font-size: 2vmin;
 }
 
 .container-issho div > div, .container-issho div > a {
     display: none;
-    margin-top: 2vw;
-    padding: 1.5vw;
+    margin-top: 1vw;
+    padding: 1vw;
     border-radius: 20px;
     font-size: 1.5vmin;
     font-weight: 500;
