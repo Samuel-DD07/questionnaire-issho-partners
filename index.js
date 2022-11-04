@@ -4,7 +4,7 @@ let indiceElement = {
     issho: 0,
     data: null,
     top: window.scrollY,
-    clc: ["Discuter avec un expert µ https://issho-partners.com/contact/"],
+    clc: ["Discuter avec vous µ https://issho-partners.com/contact/"],
     temps: 50
 }
 
