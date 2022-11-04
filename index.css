@@ -22,7 +22,7 @@ a{
 
 .container-issho {
     bottom: 0;
-    margin: 5% 20% 5%;
+    margin: 5% 20% 10vh;
     white-space: pre-line;
     box-sizing: border-box;
     letter-spacing: 1px;

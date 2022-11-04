@@ -8,7 +8,7 @@ let indiceElement = {
     temps: 50
 }
 
-async function getData(){
+export async function getData(){
     await fetch('./Cheminement-Formulaire-Issho.json')
     .then(res => res.json())
     .then(data => createConversation(data))
@@ -19,12 +19,11 @@ function createConversation(tab){
     createIssho()
     createMoi()
 
-    createResponse(`.issho.n-${0}`, "Bonjour !\nNous sommes issho, une communauté de dirigeants et d’entrepreneurs qui vous aide à trouver des solutions concrètes à votre développement et à la croissance de votre entreprise.")
+    createResponse(`.issho.n-${0}`, "Bonjour !\nNous sommes issho, nous allons vous poser quelques questions pour identifier les accompagnements les plus adapté à votre situation")
     createResponse(`.issho.n-${0}`, "Qui êtes vous ?")
     indiceElement.data.map((e, i) => createResponse(`.moi.n-${0}`, e.title, i, true))
 }
 
-getData()
 
 function createIssho(){
     const issho = document.createElement('div')
