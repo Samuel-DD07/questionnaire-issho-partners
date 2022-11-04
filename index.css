@@ -34,10 +34,8 @@ a{
     background-color: #134093;
     color: white;
     border-radius: 20px;
-    padding: 1.5vw;
-    font-size: 1.5vmin;
-    width: 250px;
-    height: 50px;
+    padding: 2vw;
+    font-size: 2vw;
     font-weight: 500;
     border: none;
     cursor: pointer;
@@ -54,7 +52,7 @@ a{
 
 .container-issho {
     bottom: 0;
-    margin: 5% 20% 10vh;
+    margin: 5% 4% 10vh;
     white-space: pre-line;
     box-sizing: border-box;
     letter-spacing: 1px;
@@ -62,27 +60,22 @@ a{
 
 .container-issho>h1 {
     text-align: center;
-    font-size: 2.5vmin;
+    font-size: 2vw;
     padding: 5%;
     font-weight: 700;
-}
-
-.container-issho>h3 {
-    color: rgb(111, 111, 111);
-    font-weight: 500;
-    font-size: 2vmin;
 }
 
 .container-issho div > div, .container-issho div > a {
     display: none;
     margin-top: 1vw;
-    padding: 1vw;
+    padding: 2vw;
     border-radius: 20px;
-    font-size: 1.5vmin;
+    font-size: 1.5vw;
     font-weight: 500;
     max-width: 25vw;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 
 .issho,
 .moi {
@@ -127,13 +120,13 @@ a{
 .issho::before {
     content: "issho";
     font-weight: 500;
-    font-size: 2vmin;
+    font-size: 2vw;
 }
 
 .moi::before {
-    content: "Moi";
+    content: "moi";
     font-weight: 500;
-    font-size: 2vmin;
+    font-size: 2vw;
 }
 
 @keyframes translate {
@@ -147,3 +140,107 @@ a{
         transform: translateY(0px);
     }
 }
+
+
+@media screen and (max-width: 800px) {
+            .button-start > button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #134093;
+                color: white;
+                border-radius: 20px;
+                padding: 2vw;
+                font-size: 3vw;
+                font-weight: 500;
+                border: none;
+                cursor: pointer;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                transition: background-color 1s ease;
+            }
+            
+            .button-start > button:hover{
+                border: 1px solid rgb(99, 178, 231);
+                background-color: aliceblue;
+                background-color: #3b74de;
+                transition: background-color 1s ease;
+            }
+            
+            .container-issho {
+                bottom: 0;
+                margin: 5% 4% 10vh;
+                white-space: pre-line;
+                box-sizing: border-box;
+                letter-spacing: 1px;
+            }
+            
+            .container-issho>h1 {
+                text-align: center;
+                font-size: 5vw;
+                padding: 5%;
+                font-weight: 700;
+            }
+            
+            .container-issho div > div, .container-issho div > a {
+                display: none;
+                margin-top: 1vw;
+                padding: 2vw;
+                border-radius: 20px;
+                font-size: 2vw;
+                font-weight: 500;
+                max-width: 25vw;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+        
+            .issho,
+        .moi {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            transition: transform 1s;
+            animation: translate 1s ease;
+        }
+        
+        .moi {
+            display: flex;
+            align-items: flex-end;
+        }
+        
+        .moi>div, .moi>a {
+            background-color: #134093;
+            color: white;
+        }
+        
+        .moi>.selection {
+            cursor: pointer;
+            background-color: #134093;
+            transition: background-color 1s;
+        }
+        
+        .issho>.list {
+            border-radius: 0px;
+            margin-left: 4vw;
+            padding-left: 2vw;
+            background: linear-gradient(90deg, #134093 0%, #134093 2%, rgba(255, 255, 255, 1) 2%, rgba(255, 255, 255, 1) 100%);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        
+        .moi>.selection:hover, .moi>a:hover{
+            border: 1px solid rgb(99, 178, 231);
+            background-color: aliceblue;
+            background-color: #3b74de;
+            transition: background-color 1s;
+        }
+        
+        .issho::before {
+            content: "issho";
+            font-weight: 500;
+            font-size: 3vw;
+        }
+        
+        .moi::before {
+            content: "moi";
+            font-weight: 500;
+            font-size: 3vw;
+        }
+        }

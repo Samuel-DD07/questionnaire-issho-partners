@@ -1,5 +1,6 @@
 const content = document.querySelector('.container-issho')
 const button = document.querySelector('.button-start')
+
 let indiceElement = {
     moi: 0,
     issho: 0,
@@ -9,20 +10,13 @@ let indiceElement = {
     temps: 50
 }
 
-// async function getData() {
-//     await fetch('https://samuel-dd07.github.io/questionnaire-issho-partners/Cheminement-Formulaire-Issho.json')
-//         .then(res => res.json())
-//         .then(data => createConversation(data))
-// }
-
 async function getData() {
-    await fetch('./Cheminement-Formulaire-Issho.json')
-        .then(res => res.json())
-        .then(data => createConversation(data))
+     await fetch('https://samuel-dd07.github.io/questionnaire-issho-partners/Cheminement-Formulaire-Issho.json')
+         .then(res => res.json())
+         .then(data => createConversation(data))
 }
 
 function createConversation(tab) {
-    content.style.minHeight = "100vh"
     button.outerHTML = ""
     indiceElement.data = tab[0].topic.topics
     createIssho()
@@ -112,11 +106,15 @@ function createResponse(content, reponse, id, interaction) {
         try {
             document.querySelector(content).appendChild(responseContent)
         } catch(e){}
-        indiceElement.top = window.scrollY + responseContent.offsetHeight
-        window.scroll({
-            top: indiceElement.top,
-            behavior: 'smooth'
-        })
+        console.log(window.innerHeight*3/4, responseContent.offsetTop)
+        if (window.innerHeight*2/4 < responseContent.offsetTop) {
+           indiceElement.top = window.scrollY + responseContent.offsetHeight
+           window.scroll({
+                top: indiceElement.top,
+                behavior: 'smooth'
+            })
+        }
+         
     }, indiceElement.temps)
     indiceElement.temps = indiceElement.temps + 500
 }
