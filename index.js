@@ -82,7 +82,7 @@ function elementSelected(e){
 function createResponse(content, reponse, id, interaction){
     let responseContent = null
 
-    if (typeof reponse == "string" && reponse.indexOf(':') > -1){
+    if (typeof reponse == "string" && reponse.indexOf('https') > -1){
         responseContent = document.createElement('a')
         responseContent.textContent = reponse.split('-')[0]
         responseContent.href = reponse.split('-')[1]
