@@ -1,4 +1,5 @@
 const content = document.querySelector('.container-issho')
+const button = document.querySelector('.button-start')
 let indiceElement = {
     moi: 0,
     issho: 0,
@@ -8,18 +9,19 @@ let indiceElement = {
     temps: 50
 }
 
-export async function getData(){
-    await fetch('./Cheminement-Formulaire-Issho.json')
+async function getData(){
+    await fetch('https://samuel-dd07.github.io/questionnaire-issho-partners/Cheminement-Formulaire-Issho.json')
     .then(res => res.json())
     .then(data => createConversation(data))
 }
 
 function createConversation(tab){
+    button.outerHTML = ""
     indiceElement.data = tab[0].topic.topics
     createIssho()
     createMoi()
 
-    createResponse(`.issho.n-${0}`, "Bonjour !\nNous sommes issho, nous allons vous poser quelques questions pour identifier les accompagnements les plus adapté à votre situation")
+    createResponse(`.issho.n-${0}`, "Bonjour !\n\nNous sommes issho, nous allons vous poser quelques questions pour identifier les accompagnements les plus adapté à votre situation")
     createResponse(`.issho.n-${0}`, "Qui êtes vous ?")
     indiceElement.data.map((e, i) => createResponse(`.moi.n-${0}`, e.title, i, true))
 }

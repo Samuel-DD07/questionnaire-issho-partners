@@ -20,14 +20,40 @@ a{
     font-family: GlacialIndifference, sans-serif;
 }
 
+.button-start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.button-start > button{
+    background-color: #0d244f;
+    color: white;
+    border-radius: 20px;
+    padding: 1.5vw;
+    font-size: 1.5vmin;
+    width: 250px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: background-color 1s ease;
+}
+
+.button-start > button:hover{
+    border: 1px solid rgb(99, 178, 231);
+    background-color: aliceblue;
+    background-color: #3b74de;
+    transition: background-color 1s ease;
+}
+
 .container-issho {
     bottom: 0;
     margin: 5% 20% 10vh;
     white-space: pre-line;
     box-sizing: border-box;
     letter-spacing: 1px;
-    min-height: 100vh;
-    transition: 1s all;
 }
 
 .container-issho>h1 {
@@ -36,7 +62,7 @@ a{
     padding: 5%;
 }
 
-.container-issho h3 {
+.container-issho>h3 {
     color: rgb(111, 111, 111);
     font-weight: 500;
 }
@@ -57,7 +83,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    transition: 1s transform;
+    transition: transform 1s;
     animation: translate 1s ease;
 }
 
@@ -74,14 +100,14 @@ a{
 .moi>.selection {
     cursor: pointer;
     background-color: #134093;
-    transition: 1s all;
+    transition: background-color 1s;
 }
 
 .moi>.selection:hover, .moi>a:hover{
     border: 1px solid rgb(99, 178, 231);
     background-color: aliceblue;
     background-color: #3b74de;
-    transition: 1s all;
+    transition: background-color 1s;
 }
 
 .issho::before {
