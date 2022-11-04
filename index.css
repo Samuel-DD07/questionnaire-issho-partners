@@ -31,7 +31,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0d244f;
+    background-color: #134093;
     color: white;
     border-radius: 20px;
     padding: 1.5vw;
@@ -99,7 +99,7 @@ a{
 }
 
 .moi>div, .moi>a {
-    background-color: #0d244f;
+    background-color: #134093;
     color: white;
 }
 
@@ -107,6 +107,14 @@ a{
     cursor: pointer;
     background-color: #134093;
     transition: background-color 1s;
+}
+
+.issho>.list {
+    border-radius: 0px;
+    margin-left: 4vw;
+    padding-left: 2vw;
+    background: linear-gradient(90deg, #134093 0%, #134093 2%, rgba(255, 255, 255, 1) 2%, rgba(255, 255, 255, 1) 100%);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .moi>.selection:hover, .moi>a:hover{

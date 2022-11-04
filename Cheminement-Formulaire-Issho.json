@@ -32,7 +32,7 @@
                                           "title": "Nos clients dans des situations similaires sont sensibles aux accompagnements suivants :"
                                         },
                                         {
-                                          "title": "Je prépare mon arrivée au sein de l'équipe"
+                                          "title": "£ Je prépare mon arrivée au sein de l'équipe"
                                         },
                                         {
                                           "title": "£ J'identifie et je renforce mon profil de dirigeant"
@@ -60,13 +60,13 @@
                                           "title": "Nos clients dans des situations similaires sont sensibles aux accompagnements suivants :"
                                         },
                                         {
-                                          "title": "Je comprends l'empreinte de ma nouvelle équipe"
+                                          "title": "£ Je comprends l'empreinte de ma nouvelle équipe"
                                         },
                                         {
-                                          "title": "Je définis une ambition et un objectif collectif partagé avec mon équipe"
+                                          "title": "£ Je définis une ambition et un objectif collectif partagé avec mon équipe"
                                         },
                                         {
-                                          "title": "J'installe les outils et les comportements qui traduisent l'ambition et la culture au sein de l'entreprise"
+                                          "title": "£ J'installe les outils et les comportements qui traduisent l'ambition et la culture au sein de l'entreprise"
                                         },
                                         {
                                           "title": "Vous souhaitez en savoir plus ?"
@@ -118,16 +118,16 @@
                                           "title": "Nos clients dans des situations similaires sont sensibles aux accompagnements suivants :"
                                         },
                                         {
-                                          "title": "Je fais évoluer mes postures de dirigeant d'entreprise"
+                                          "title": "£ Je fais évoluer mes postures de dirigeant d'entreprise"
                                         },
                                         {
-                                          "title": "Je me forme à l'Executive Business Coaching pour mieux accompagner mes pairs"
+                                          "title": "£ Je me forme à l'Executive Business Coaching pour mieux accompagner mes pairs"
                                         },
                                         {
-                                          "title": "Je me forme au métier et je développe mon activité de dirigeant de transition indépendant"
+                                          "title": "£ Je me forme au métier et je développe mon activité de dirigeant de transition indépendant"
                                         },
                                         {
-                                          "title": "Je développe ma posture et mon activité d'expert / de consultant indépendant"
+                                          "title": "£ Je développe ma posture et mon activité d'expert / de consultant indépendant"
                                         },
                                         {
                                           "title": "Vous souhaitez en savoir plus ?"
@@ -227,22 +227,27 @@
                                   "title": "\tJe prépare et je réussis ma prise de fonction",
                                   "topics": [
                                     {
-                                      "title": "Nos clients dans des situations similaires sont sensibles aux accompagnements suivants :"
-                                    },
-                                    {
-                                      "title": "Je prépare mon arrivée au sein de l'équipe"
-                                    },
-                                    {
-                                      "title": "J'identifie et je renforce mon profil de dirigeant"
-                                    },
-                                    {
-                                      "title": "Je rythme et je réussis mes 100 premiers jours"
-                                    },
-                                    {
-                                      "title": "J'installe mon leadership dans la durée"
-                                    },
-                                    {
-                                      "title": "Vous souhaitez en savoir plus ?"
+                                      "title": "Question",
+                                      "topics": [
+                                        {
+                                          "title": "Nos clients dans des situations similaires sont sensibles aux accompagnements suivants :"
+                                        },
+                                        {
+                                          "title": "£ Je prépare mon arrivée au sein de l'équipe"
+                                        },
+                                        {
+                                          "title": "£ J'identifie et je renforce mon profil de dirigeant"
+                                        },
+                                        {
+                                          "title": "£ Je rythme et je réussis mes 100 premiers jours"
+                                        },
+                                        {
+                                          "title": "£ J'installe mon leadership dans la durée"
+                                        },
+                                        {
+                                          "title": "Vous souhaitez en savoir plus ?"
+                                        }
+                                      ]
                                     }
                                   ]
                                 },
@@ -250,19 +255,24 @@
                                   "title": "\tJ'appréhende et je mobilise ma nouvelle équipe ",
                                   "topics": [
                                     {
-                                      "title": "Nos clients dans des situations similaires sont sensibles aux accompagnements suivants :"
-                                    },
-                                    {
-                                      "title": "Je comprends l'empreinte de ma nouvelle équipe"
-                                    },
-                                    {
-                                      "title": "Je définis une ambition et un objectif collectif partagé avec mon équipe"
-                                    },
-                                    {
-                                      "title": "J'installe les outils et les comportements qui traduisent l'ambition et la culture au sein de l'entreprise"
-                                    },
-                                    {
-                                      "title": "Vous souhaitez en savoir plus ?"
+                                      "title": "Question",
+                                      "topics": [
+                                        {
+                                          "title": "Nos clients dans des situations similaires sont sensibles aux accompagnements suivants :"
+                                        },
+                                        {
+                                          "title": "£ Je comprends l'empreinte de ma nouvelle équipe"
+                                        },
+                                        {
+                                          "title": "£ Je définis une ambition et un objectif collectif partagé avec mon équipe"
+                                        },
+                                        {
+                                          "title": "£ J'installe les outils et les comportements qui traduisent l'ambition et la culture au sein de l'entreprise"
+                                        },
+                                        {
+                                          "title": "Vous souhaitez en savoir plus ?"
+                                        }
+                                      ]
                                     }
                                   ]
                                 }
@@ -363,16 +373,16 @@
                                       "title": "Nos clients dans des situations similaires sont sensibles aux accompagnements suivants :"
                                     },
                                     {
-                                      "title": "Je fais évoluer mes postures de dirigeant d'entreprise"
+                                      "title": "£ Je fais évoluer mes postures de dirigeant d'entreprise"
                                     },
                                     {
-                                      "title": "Je me forme à l'Executive Business Coaching pour mieux accompagner mes pairs"
+                                      "title": "£ Je me forme à l'Executive Business Coaching pour mieux accompagner mes pairs"
                                     },
                                     {
-                                      "title": "Je me forme au métier et je développe mon activité de dirigeant de transition indépendant"
+                                      "title": "£ Je me forme au métier et je développe mon activité de dirigeant de transition indépendant"
                                     },
                                     {
-                                      "title": "Je développe ma posture et mon activité d'expert / de consultant indépendant"
+                                      "title": "£ Je développe ma posture et mon activité d'expert / de consultant indépendant"
                                     },
                                     {
                                       "title": "Vous souhaitez en savoir plus ?"

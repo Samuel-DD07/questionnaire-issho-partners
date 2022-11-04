@@ -9,8 +9,14 @@ let indiceElement = {
     temps: 50
 }
 
+// async function getData() {
+//     await fetch('https://samuel-dd07.github.io/questionnaire-issho-partners/Cheminement-Formulaire-Issho.json')
+//         .then(res => res.json())
+//         .then(data => createConversation(data))
+// }
+
 async function getData() {
-    await fetch('https://samuel-dd07.github.io/questionnaire-issho-partners/Cheminement-Formulaire-Issho.json')
+    await fetch('./Cheminement-Formulaire-Issho.json')
         .then(res => res.json())
         .then(data => createConversation(data))
 }
@@ -88,7 +94,9 @@ function createResponse(content, reponse, id, interaction) {
         responseContent.href = reponse.split('µ')[1]
         interaction = false
     } else if (typeof reponse == "string" && reponse.indexOf('£') > -1){
-        console.log(reponse)
+        responseContent = document.createElement('div')
+        responseContent.textContent = reponse.split('£')[1]
+        responseContent.classList.add("list")
     } else {
         responseContent = document.createElement('div')
         responseContent.textContent = reponse
@@ -101,7 +109,9 @@ function createResponse(content, reponse, id, interaction) {
     setTimeout(() => {
         responseContent.style.display = "inline-flex"
         responseContent.style.animation = "translate 1.5s ease"
-        document.querySelector(content).appendChild(responseContent)
+        try {
+            document.querySelector(content).appendChild(responseContent)
+        } catch(e){}
         indiceElement.top = window.scrollY + responseContent.offsetHeight
         window.scroll({
             top: indiceElement.top,
