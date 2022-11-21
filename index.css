@@ -34,8 +34,8 @@ a{
     background-color: #134093;
     color: white;
     border-radius: 20px;
-    padding: 2vw;
-    font-size: 2vw;
+    padding: 1.5vw;
+    font-size: 1.5vw;
     font-weight: 500;
     border: none;
     cursor: pointer;
@@ -60,7 +60,7 @@ a{
 
 .container-issho>h1 {
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.5vw;
     padding: 5%;
     font-weight: 700;
 }
@@ -68,9 +68,9 @@ a{
 .container-issho div > div, .container-issho div > a {
     display: none;
     margin-top: 1vw;
-    padding: 2vw;
+    padding: 1vw;
     border-radius: 20px;
-    font-size: 1.5vw;
+    font-size: 1vw;
     font-weight: 500;
     max-width: 25vw;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -120,13 +120,13 @@ a{
 .issho::before {
     content: "issho";
     font-weight: 500;
-    font-size: 2vw;
+    font-size: 1vw;
 }
 
 .moi::before {
     content: "moi";
     font-weight: 500;
-    font-size: 2vw;
+    font-size: 1vw;
 }
 
 @keyframes translate {
@@ -151,7 +151,7 @@ a{
                 color: white;
                 border-radius: 20px;
                 padding: 2vw;
-                font-size: 3vw;
+                font-size: 2.5vw;
                 font-weight: 500;
                 border: none;
                 cursor: pointer;
@@ -176,7 +176,7 @@ a{
             
             .container-issho>h1 {
                 text-align: center;
-                font-size: 5vw;
+                font-size: 4vw;
                 padding: 5%;
                 font-weight: 700;
             }
@@ -186,7 +186,7 @@ a{
                 margin-top: 1vw;
                 padding: 2vw;
                 border-radius: 20px;
-                font-size: 2vw;
+                font-size: 1.5vw;
                 font-weight: 500;
                 max-width: 25vw;
                 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -235,12 +235,12 @@ a{
         .issho::before {
             content: "issho";
             font-weight: 500;
-            font-size: 3vw;
+            font-size: 2.5vw;
         }
         
         .moi::before {
             content: "moi";
             font-weight: 500;
-            font-size: 3vw;
+            font-size: 2.5vw;
         }
         }
