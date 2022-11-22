@@ -1,4 +1,4 @@
-const content = document.querySelector('.container-issho')
+const contentQuestionnaire = document.querySelector('.container-issho')
 const button = document.querySelector('.button-start')
 
 // Tous les paramètres nécessaires pour le fonctionnement du script
@@ -34,7 +34,7 @@ function createConversation(tab) {
 function createIssho() {
     const issho = document.createElement('div')
     issho.classList.add('issho', `n-${indiceElement.issho}`)
-    content.appendChild(issho)
+    contentQuestionnaire.appendChild(issho)
     indiceElement.issho += 1
 }
 
@@ -42,7 +42,7 @@ function createIssho() {
 function createMoi() {
     const moi = document.createElement('div')
     moi.classList.add('moi', `n-${indiceElement.moi}`)
-    content.appendChild(moi)
+    contentQuestionnaire.appendChild(moi)
     indiceElement.moi += 1
 }
 
@@ -52,8 +52,6 @@ function elementSelected(e) {
     createMoi()
     createResponse(`.moi.n-${indiceElement.moi - 1}`, e.target.textContent)
     document.querySelector(`div.moi.n-${indiceElement.moi - 2}`).outerHTML = ""
-    console.log(indiceElement.moi);
-
 
     if (e.target.textContent == "Revenir à la question précedente") {
         const allMoi = document.querySelectorAll('div.moi')
@@ -139,8 +137,15 @@ function createResponse(content, reponse, id, interaction) {
         try {
             document.querySelector(content).appendChild(responseContent)
         } catch (e) { }
-        if (window.innerHeight * 2 / 4 < responseContent.offsetTop) {
-            indiceElement.top = window.scrollY + responseContent.offsetHeight * 1.5
+        if (contentQuestionnaire.getBoundingClientRect().bottom >= window.innerHeight) {
+            indiceElement.top = window.scrollY + getAbsoluteHeight(responseContent)
+            window.scroll({
+                top: indiceElement.top,
+                behavior: 'smooth'
+            })
+        }
+        if (contentQuestionnaire.getBoundingClientRect().bottom * 2 <= window.innerHeight) {
+            indiceElement.top = window.scrollY + contentQuestionnaire.getBoundingClientRect().bottom - window.innerHeight + 20
             window.scroll({
                 top: indiceElement.top,
                 behavior: 'smooth'
@@ -168,4 +173,15 @@ function searchInObj(obj, name, val, currentPath) {
     }
 
     return matchingPath
+}
+
+// Pour avoir la hauteur d'un élément avec son padding, margin etc
+function getAbsoluteHeight(el) {
+    el = (typeof el === 'string') ? document.querySelector(el) : el;
+
+    var styles = window.getComputedStyle(el);
+    var margin = parseFloat(styles['marginTop']) +
+        parseFloat(styles['marginBottom']);
+
+    return Math.ceil(el.offsetHeight + margin);
 }
