@@ -129,6 +129,10 @@ a{
     font-size: 1vw;
 }
 
+#précédent{
+    background-color: #0e2755;
+}
+
 @keyframes translate {
     0% {
         opacity: 0;
@@ -185,7 +189,7 @@ a{
                 display: none;
                 margin-top: 1vw;
                 padding: 2vw;
-                border-radius: 20px;
+                border-radius: 10px;
                 font-size: 1.5vw;
                 font-weight: 500;
                 max-width: 25vw;
