@@ -17,6 +17,7 @@ async function getData() {
     await fetch('https://samuel-dd07.github.io/questionnaire-issho-partners/Cheminement-Formulaire-Issho.json')
         .then(res => res.json())
         .then(newData => createConversation(newData))
+        .catch(e => {})
 }
 
 // Pour démarer la conversion et le script via les données JSON

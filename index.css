@@ -4,22 +4,17 @@ body {
     padding: 0;
 }
 
-body{
-    margin-top: 100vh;
-    height: 1000vh;
-}
-
 a{
     list-style: none;
     text-decoration: none;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'GlacialIndifference';
     src: url('https://samuel-dd07.github.io/questionnaire-issho-partners/GlacialIndifference-Regular.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 * {
     font-family: GlacialIndifference, sans-serif;
