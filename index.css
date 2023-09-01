@@ -50,15 +50,25 @@ a{
     transition: background-color 1s ease;
 }
 
+.parent-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 100vh;
+}
+
 .container-issho {
-    bottom: 0;
-    margin: 5% 4% 10vh;
+    padding: 5% 4% 10vh;
     white-space: pre-line;
     box-sizing: border-box;
     letter-spacing: 1px;
+    margin: auto;
+    width: 80%;
+    /* height: 100vh; Remove or adjust this as it might cause the block to fill the entire height */
 }
 
-.container-issho>h1 {
+
+.container-issho>h2 {
     text-align: center;
     font-size: 1.5vw;
     padding: 5%;
@@ -172,7 +182,7 @@ a{
             
             .container-issho {
                 bottom: 0;
-                margin: 5% 4% 10vh;
+                padding: 5% 4% 10vh;
                 white-space: pre-line;
                 box-sizing: border-box;
                 letter-spacing: 1px;
